@@ -3,30 +3,30 @@
 
 ## :white_check_mark: 1일차
 ### 데이터 조작어(DML)
-- 데이터를 검색(`select`), 삽입(`insert`), 수정(`update`), 삭제(`delete`)하는 데 사용
-- select문의 문장 프레임워크
+- 데이터를 검색(`SELECT`), 삽입(`INSERT`), 수정(`UPDATE`), 삭제(`DELETE`)하는 데 사용
+- SELECT문 문장 프레임워크
     
     ```sql
-    select 속성 이름
-    from 테이블 이름
-    where 검색 조건;
+    SELECT 속성 이름
+    FROM 테이블 이름
+    WHERE 검색 조건;
     ```
-- insert문 명령어
+- INSERT문 명령어
 
      ```sql
-    insert into 테이블 이름 [(속성리스트)] values (값 리스트);
+    INSERT INTO 테이블 이름 [(속성리스트)] VALUES (값 리스트);
     ```
-- update문 명령어
+- UPDATE문 명령어
 
      ```sql
-    update 테이블 이름
-    set 속성 이름1 = 값1[, 속성 이름2 = 값2, ...]
-    [where <검색 조건>];
+    UPDATE 테이블 이름
+    SET 속성 이름1 = 값1[, 속성 이름2 = 값2, ...]
+    [WHERE <검색 조건>];
     ```
-- delete문 명령어
+- DELETE문 명령어
 
     ```sql
-    delete from 테이블 이름 [where 검색조건];
+    DELETE FROM 테이블 이름 [WHERE 검색조건];
     ```
 
 
