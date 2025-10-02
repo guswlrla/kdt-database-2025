@@ -50,7 +50,7 @@
     - IFNULL로 방어코드 작성
 
         ```sql
-        select ifnull(sum(saleprice), 0) as totalRevenue from orders;
+        SELECT IFNULL(SUM(saleprice), 0) AS totalRevenue FROM orders;
         ```
 - NULL은 값이 없는 상태를 의미, 값으로 비교 불가(`IS NULL`, `IS NOT NULL`로 사용)
 
