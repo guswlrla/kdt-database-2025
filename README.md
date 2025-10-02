@@ -42,27 +42,7 @@
 
 ## :white_check_mark: 2일차
 ### 1. 내장 함수
-- 숫자 함수
-    - round(숫자, 자릿수): 반올림
-    - ceil(): 올림
-    - floor(): 내림
-- 문자 함수
-    - concat(): 문자열 연결
-    - upper(), lower(): 대문자, 소문자 변환
-    - lpad(), rpad(): 왼쪽, 오른쪽에 문자 채우기
-    - replace(): 문자열 대체
-    - substr(시작위치, 길이): 문자열 자르기
-    - length(), char_length(): 문자열 길이
-    - trim(): 앞뒤 공백 제거
-- 날짜/시간 함수
-    - str_to_date(): 문자열을 날짜형으로 변환
-    - date_format(): 날짜형 데이터를 문자형으로 변환
-    - adddate(): 날짜 더하기
-    - datediff(): 날짜 차이 계산
-- 집계 함수
-    - sum(), avg(), count(), max(), min(): 합, 평균, 개수, 최대, 최소
-- NULL 처리 함수
-    - ifnull(컬럼명, 대체값): NULL 값을 지정한 값으로 대체
+<img src="https://github.com/user-attachments/assetsd69702fd-8e26-4acb-b8e1-262cf2b23018" />
 
 ### 2. NULL값 처리
 - 'NULL + 숫자' 연산 결과는 NULL
