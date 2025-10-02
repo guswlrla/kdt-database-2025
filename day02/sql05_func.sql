@@ -21,23 +21,23 @@ select *
 from orders
 where orderdate = '2024-07-03'; -- 이렇게 쓰지 x
 
--- 문자열 데이터를 날짜형(date)으로 반환
+-- str_to_date() - 문자열 데이터를 날짜형(date)으로 반환
 select *
 from orders
 where orderdate = str_to_date('2024-07-03', '%Y-%m-%d'); -- 데이터타입은 date
 
 select str_to_date('2024-07-03', '%Y-%m-%d'); -- 포맷이 일치해야 함
 
--- 날짜형 데이터를 문자열로 반환, 포맷 변경 가능
+-- date_format() - 날짜형 데이터를 문자열로 반환, 포맷 변경 가능
 select date_format(orderdate, '%Y.%m.%d') -- 데이터타입은 string
 from orders;
 
--- 지정한 시간만큼 더함
+-- adddate() - 지정한 시간만큼 더함
 select orderdate, adddate(orderdate, 1) 
 from orders;
 
 select adddate(curdate(), 100); 
 
--- date1 - date2의 날짜 차이 반환
+-- datediff() - (date1 - date2)의 날짜 차이 반환
 select datediff('2025-09-30', now()) -- string을 date타입으로 자동 변환 해줌
 from orders;
