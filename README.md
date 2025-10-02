@@ -42,7 +42,7 @@
 
 ## :white_check_mark: 2일차
 ### 1. 내장 함수
-<img width="1280" height="801" alt="Image" src="https://github.com/user-attachments/assets/f36c52fe-97b9-40fc-bb01-5a7f777840a7" />
+<img width="1000" height="800" alt="Image" src="https://github.com/user-attachments/assets/f36c52fe-97b9-40fc-bb01-5a7f777840a7"/>
 
 ### 2. NULL값 처리
 - 'NULL + 숫자' 연산 결과는 NULL
