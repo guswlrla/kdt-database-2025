@@ -85,11 +85,11 @@
     - 양쪽 테이블에 모두 존재하는 데이터만 조회
     - 기본 문법
 
-    ```SQL
-    SELECT 컬럼명
-    FROM 테이블 A INNER JOIN 테이블 B -- INNER 생략 가능
-    ON A.연결컬럼 = B.연결컬럼;
-    ```
+        ```SQL
+        SELECT 컬럼명
+        FROM 테이블 A INNER JOIN 테이블 B -- INNER 생략 가능
+        ON A.연결컬럼 = B.연결컬럼;
+        ```
 - LEFT OUTER JOIN
     - **왼쪽 테이블** 기준으로 JOIN
     - 왼쪽 테이블 A 의 모든 데이터와 A와 B 테이블의 중복데이터들이 검색됨
