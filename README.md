@@ -63,3 +63,41 @@
     SELECT (@seq := @seq+1), bookname, price
     FROM book;
     ```
+## :white_check_mark: 3일차
+### 1. GROUP BY
+- 데이터를 그룹화하여, 각 그룹에 대해 집계 함수를 사용할 수 있게 함
+- SQL 작성 순서
+
+    ```sql
+    SELECT 속성 이름
+    FROM 테이블 이름
+    WHERE 검색 조건
+    GROUP BY 속성 이름
+    HAVING 검색 조건
+    ORDER BY 속성 이름;
+    ```
+- (`HAVING`) 절은 GROUP BY로 그룹화한 결과에 조건을 줄 때 사용
+    - WHERE은 그룹화 전에 필터링, HAVING은 그룹화 후에 필터링
+
+### 2. JOIN(조인)
+- 여러 테이블을 연결해서 관계 있는 데이터를 조회할 수 있도록 함
+- INNER JOIN(내부 조인)
+    - 양쪽 테이블에 모두 존재하는 데이터만 조회
+    - 기본 문법
+
+    ```SQL
+    SELECT 컬럼명
+    FROM 테이블 A INNER JOIN 테이블 B -- INNER 생략 가능
+    ON A.연결컬럼 = B.연결컬럼;
+    ```
+- LEFT OUTER JOIN
+    - **왼쪽 테이블** 기준으로 JOIN
+    - 왼쪽 테이블 A 의 모든 데이터와 A와 B 테이블의 중복데이터들이 검색됨
+    - 일치하는 값이 없으면 `NULL`로 채움
+    - 기본 문법
+
+        ```SQL
+        SELECT 컬럼명
+        FROM 테이블 A LEFT OUTER JOIN 테이블 B -- OUTER는 생략 가능
+        ON A.연결컬럼 = B.연결컬럼;
+        ```
