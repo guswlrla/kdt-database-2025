@@ -9,7 +9,20 @@ from customer
 where custid in (select custid from orders);
 
 -- 대한미디어에서 출판한 도서를 구매한 고객의 이름을 나타내시오.
-SELECT
+select name
+from customer
+where custid in (select custid
+				 from orders
+                 where bookid in (select bookid
+								  from book
+                                  where publisher = '대한미디어'));
+
+-- 출판사별로 출판사의 평균 도서 가격보다 비싼 도서를 구하시오.
+select b1.bookname
+from book b1
+where b1.price > (select avg(b2.price)
+				  from book b2
+                  where b2.publisher = b1.publisher);
 
 -- 평균 주문금액 이하의 주문에 대해서 주문번호와 금액을 나타내시오.
 select orderid, saleprice
@@ -23,6 +36,13 @@ from orders o1
 where saleprice > (select avg(saleprice)
 				from orders o2
 				where o1.custid = o2.custid);
+
+-- ">" 연산자는 단일행만 반환하기 때문에 오류
+-- select orderid, custid, saleprice
+-- from orders
+-- where saleprice > (select avg(saleprice)
+-- 					from orders
+--                     group by custid);
                 
 -- 대한민국에 거주하는 고객에게 판매한 도서의 총판매액을 구하시오.
 select sum(saleprice)
