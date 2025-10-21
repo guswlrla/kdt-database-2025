@@ -101,3 +101,21 @@
         FROM 테이블 A LEFT OUTER JOIN 테이블 B -- OUTER는 생략 가능
         ON A.연결컬럼 = B.연결컬럼;
         ```
+## :white_check_mark: 4일차
+### 1. 서브쿼리
+- 하나의 sql문 안에 다른 sql문이 중첩된 질의
+- 
+### 2. 연산자
+### 3. DDL
+
+## :white_check_mark: 5일차
+### 1. 뷰
+### 2. 인덱스
+
+
+## :white_check_mark: 6일차
+### 1. 프로시저
+### 2. 트리거
+
+## :white_check_mark: 7일차
+### 1. er모델
