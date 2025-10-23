@@ -41,8 +41,8 @@ where saleprice > (select avg(saleprice)
 -- select orderid, custid, saleprice
 -- from orders
 -- where saleprice > (select avg(saleprice)
--- 					from orders
---                     group by custid);
+-- 						from orders
+--                     	group by custid);
                 
 -- 대한민국에 거주하는 고객에게 판매한 도서의 총판매액을 구하시오.
 select sum(saleprice)
